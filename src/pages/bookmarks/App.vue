@@ -1,12 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <frame>
+      <img alt="Vue logo" src="../../assets/logo.png">
+    </frame>
   </div>
 </template>
 
 <script>
+import Frame from '@/components/Frame'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    Frame
+  }
 }
 </script>
 
