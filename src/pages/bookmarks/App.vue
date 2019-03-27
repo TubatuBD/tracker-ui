@@ -1,18 +1,24 @@
 <template lang="pug">
   #app
-    frame(v-slot)
-      img(src='@/assets/logo.png')
+    dash-frame(v-slot)
+      bookmark
+        report-filter
+        report-viewer
 </template>
-</template>
-
 
 <script>
-import Frame from '@/components/Frame'
+import DashFrame from '@/components/DashFrame'
+import Bookmark from '@/components/Container/Bookmark'
+import ReportFilter from '@/components/Report/Filter'
+import ReportViewer from '@/components/Report/Viewer'
 
 export default {
   name: 'app',
   components: {
-    Frame
+    DashFrame,
+    Bookmark,
+    ReportFilter,
+    ReportViewer
   }
 }
 </script>

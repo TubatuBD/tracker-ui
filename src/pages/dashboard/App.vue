@@ -1,18 +1,15 @@
-<template>
-  <div id="app">
-    <frame>
-      dashboard
-    </frame>
-  </div>
+<template lang="pug">
+  #app
+    dash-frame(v-slot) dashboard
 </template>
 
 <script>
-import Frame from '@/components/Frame'
+import DashFrame from '@/components/DashFrame'
 
 export default {
   name: 'app',
   components: {
-    Frame
+    DashFrame
   }
 }
 </script>
